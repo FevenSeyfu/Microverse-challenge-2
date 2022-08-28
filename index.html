@@ -2,40 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+  
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
-      <img src="" alt="Logo" id="header-img">
+      <img src="" alt="Logo" id="header-img" >
       <nav id="nav-bar">
         <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About </a>
-        <a href="#contact_us" class="nav-link">Contact Us</a>
+        <a href="#products" class="nav-link">Products </a>
+        <a href="#contact_us" class="nav-link">Contact us</a>
       </nav>
     </header>
     <div id="home">
-      <video src="" id="video"></video>
+      <video width="600" height="240" src="/Product_video.mp4" autoplay controls preload="none"muted>
+        Video cannot be displayed
+      </video>
+        <div id="description">
+          <p class="text-element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sint repudiandae reiciendis laudantium, temporibus praesentium cupiditate saepe soluta inventore enim error earum itaque! Optio, molestias eius. Laborum eos quis distinctio.
+            Excepturi alias quam ratione, eligendi corrupti tempore placeat culpa. Quasi recusandae assumenda commodi, blanditiis ea sit? Iusto adipisci tempora eos itaque est enim? Reiciendis iure praesentium, quos impedit hic nostrum.</p>
+            <button class="btn">Learn more</button>
+        </div>
+    </div>
+    <div id="products">
+        <div class="card">
+            <div class="diplay-product">
+              <img src="css.png" alt="Product image" width="200" height="67"/>
+            </div>
+            <div class="content"></div>
+        </div>
+    </div>
+    <div id="contact_us">
       <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input type="email" name="email" id="email" placeholder="Email">
-        <input type="submit" value="" id="submit" >
+        <label for="name">Name</label>
+        <input type="text" id="name" class="input" placeholder="Enter name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="input" placeholder="Email">
+        <label for="feedback">Comment</label>
+        <textarea name="fedback" id="feedback" cols="30" class="input" rows="10"></textarea>
+        <input type="submit" value="Submit" class="btn" >
         
       </form>
     </div>
-    <div id="about">
-      <h1>Microverse trials</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus omnis quibusdam sed voluptates asperiores ullam sint velit. Saepe vero, fuga, quis ex nihil, officiis voluptatum voluptatibus sit accusamus quo eaque?
-      Facilis dolores eos quae corrupti ipsum, excepturi corporis nihil, laboriosam fugit veritatis cumque necessitatibus deserunt, qui labore aliquam! Ut facilis, porro iste aliquid ducimus magni esse illum accusantium sapiente consectetur!
-      Eum, qui? Excepturi architecto perspiciatis fugiat, voluptate facilis aperiam iste consectetur nam non amet itaque tempore. Optio illo animi nobis ducimus quos possimus? Atque excepturi magni earum, hic aperiam pariatur.
-      Delectus eligendi soluta dolorem, explicabo quisquam unde porro amet at hic voluptatem numquam maxime sunt consequuntur totam ipsum dolor fugit officiis velit blanditiis aperiam aliquam doloremque. Earum nesciunt tempore quisquam?</p>
-    </div>
-    <div id="contact_us">
-      <p>Contact us with this addresses</p>
-      
-    </div>
-    <script  src="js/index.js"></script>
+    <div id="footer"></div>
+   <script  src="js/index.js"></script>
   </body>
 </html>
